@@ -1,0 +1,17 @@
+---
+layout: base.liquid
+---
+
+<article>
+  {{- content -}}
+</article>
+
+<footer>
+  {% if chapters %}
+    {%- assign previousChapter = chapters | getPreviousCollectionItem: page -%}
+    {%- assign nextChapter = chapters | getNextCollectionItem: page -%}
+    {%- render "chapter-nav.liquid",
+      previousChapter: previousChapter,
+      nextChapter: nextChapter -%}
+  {% endif %}
+</footer>

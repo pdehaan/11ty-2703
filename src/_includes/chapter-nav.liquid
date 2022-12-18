@@ -1,0 +1,4 @@
+<nav>
+  {%- if previousChapter %}<p>Previous chapter: <a href="{{ previousChapter.url }}">{{ previousChapter.data.chapterTitle }}</a></p>{% endif %}
+  {%- if nextChapter %}<p>Next chapter: <a href="{{ nextChapter.url }}">{{ nextChapter.data.chapterTitle }}</a></p>{% endif %}
+</nav>

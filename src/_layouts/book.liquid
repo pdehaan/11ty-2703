@@ -1,0 +1,16 @@
+---
+layout: base.liquid
+---
+
+<article>
+  <h1>{{ bookTitle }}</h1>
+  {{- content -}}
+</article>
+
+<nav>
+  <ul>
+  {% for chapter in chapters %}
+    <li><a href="{{ chapter.url }}">Chapter {{ chapter.data.chapter }}: {{ chapter.data.chapterTitle }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
