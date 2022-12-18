@@ -1,18 +1,26 @@
 {
   "name": "11ty-2703",
-  "version": "1.0.0",
   "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "prebuild": "rm -rf www",
-    "build": "eleventy --quiet",
-    "postbuild": "npx prettier www --write --loglevel=silent",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "version": "1.0.0",
   "author": "Peter deHaan <peter@deseloper.com>",
-  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-2703/issues"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-2703#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-2703.git"
+  },
+  "scripts": {
+    "build": "eleventy --quiet",
+    "postbuild": "npx prettier www --write --loglevel=silent",
+    "prebuild": "rm -rf www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
